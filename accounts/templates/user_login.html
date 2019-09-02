@@ -7,17 +7,41 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.4.1/css/all.css">
         <title>Login</title>
+        <style>
+            body{
+                background: rgba(0,0,0,.5);
+                margin: auto;
+                overflow: hidden;
+                
+            }
+
+            div#centro{
+                position: relative;
+                margin: auto ;
+                left: 35%;
+            }
+            div#center{
+                position: relative;
+                margin: auto;
+                background: #8e5ea2;
+                box-shadow: 2px 2px 2px 1px black;
+            }
+         
+
+        
+        </style>
     </head>
     <body>
-        <div class="conteiner">
+        <div id="centro" class="conteiner ">
             <div class="col-lg-4"></div>
             <div class="col-lg-4">
-                <div class="jumbotron" style="margin-top:150px">
+                <div id="center"class="jumbotron" style="margin-top:200px">
                     <form class="" method="POST">
                         {% csrf_token %}
 
-                        <h4 class="form-signin-heading">Login</h4>
+                        <h4 ID="TITLE"class="form-signin-heading">WINOVER MIS</h4>
                         {% if messages %}
                             <div class="alert alert-info" role="alert">
                                 {% for message in messages %}
@@ -32,7 +56,7 @@
                             <input type="password" id="password" name="password" class="form-control" placeholder="Senha">
                         </div>
                         
-                            <button class="btn btn-primary form-control" type="submit">Entrar</button>
+                            <button class="btn btn-dark form-control" type="submit">Entrar</button>
                         
                     </form>
 
