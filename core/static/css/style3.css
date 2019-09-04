@@ -57,7 +57,7 @@ a:focus {
     left: -250px;
     height: 100vh;
     z-index: 999;
-    background: rgb(101, 104, 117);
+    background: linear-gradient(120deg,#3498db,#8e44ad);
     color: #fff;
     text-decoration: none;
     transition: all 0.3s;
@@ -110,7 +110,7 @@ nav#sidebar a{
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #8e5ea2;
+    background:linear-gradient(120deg,#3498db,#8e44ad);
 }
 
 #sidebar ul.components {
@@ -141,7 +141,7 @@ nav#sidebar a{
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #8e5ea2;
+    background: linear-gradient(120deg,#3498db,#8e44ad);
 }
 
 a[data-toggle="collapse"] {
@@ -162,7 +162,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #8e5ea2;
+    background: linear-gradient(120deg,#3498db,#8e44ad);
     text-decoration: none;
 
 }
@@ -187,7 +187,7 @@ a.download {
 
 a.article,
 a.article:hover {
-    background: #8e5ea2 !important;
+    background: linear-gradient(120deg,#3498db,#8e44ad)!important;
     color: #fff !important;
 }
 
