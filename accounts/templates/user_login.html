@@ -14,12 +14,11 @@
     </head>
 
     <body>
-
+        
                     <form class="login-form" method="POST">
                         {% csrf_token %}
-
-                        <h1>Login</h1>
-
+                        <img src="{% static 'img/wino_capa_png.png' %}" id="img-200-200">
+                      <h1 id="logo">WINOVER</h1>
                         {% if messages %}
                             <div class="alert alert-info" role="alert">
                                 {% for message in messages %}
@@ -39,6 +38,9 @@
                           </div>
                   
                           <input type="submit" class="logbtn" value="Login">
+                          
+                        
+                        
                   
                          
                   

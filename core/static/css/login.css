@@ -8,8 +8,22 @@
 
 body{
   min-height: 100vh;
-  background-image: linear-gradient(120deg,#3498db,#8e44ad);
+  background: rgb(248, 247, 247);
 }
+
+#logo{
+  background: -webkit-linear-gradient(left, #8e44ad,#3498db);
+  background: linear-gradient(left, #8e44ad,#3498db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#img-200-200 {
+  width: 60px;
+  margin-left: 108px;
+  margin-top: -25px;
+}
+
 
 .login-form{
   width: 360px;
@@ -21,6 +35,11 @@ body{
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+  filter:alpha(opacity=70);
+  opacity: 0.2;
+  -moz-opacity:0.2;
+  -webkit-opacity:0.7;
+  box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
 }
 
 .login-form h1{
