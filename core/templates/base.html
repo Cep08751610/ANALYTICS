@@ -26,13 +26,13 @@
                 </div>
     
                 <div class="sidebar-header">
-                    <h3>Winover MIS</h3>
+                    <h1>Winover</h1>
                 </div>
     
                 <ul class="list-unstyled components" id="colorforc">
-                    <p><i class="fas fa-user"></i>{% if user.is_authenticated %}{{ user.get_full_name|default:user.username }}{% endif %}</p>
+                    <p><i id="user" class="fas fa-user"></i>{% if user.is_authenticated %}{{ user.get_full_name|default:user.username }}{% endif %}</p>
                     <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Produtos</a>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i id=icone class="fas fa-chart-pie"></i>Carteiras</a>
                         <ul class="collapse list-unstyled BG-dark" id="homeSubmenu">
                             <li><a href="#">DM CARD</a>
                             </li>
@@ -44,8 +44,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Internos</a>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Reports</a>
+                        <a href="#"><i id="icone"class="far fa-file-excel"></i>Internos</a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><i id="icone"class="fas fa-chart-line"></i>Reports</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li>
                                 <a href="#">Page 1</a>
@@ -53,23 +53,19 @@
                             <li>
                                 <a href="#">Page 2</a>
                             </li>
-                            <li>
-                                <a href="#">Page 3</a>
-                            </li>
+                           
                         </ul>
                     </li>
     
-                    <li>
-                        <a href="#">Sobre</a>
-                    </li>
+                    
                 </ul>
     
                 <ul class="list-unstyled CTAs">
                     <li>
-                        <a id="relatorios" href="" class="download bg-dark">Relatorios Internos</a>
+                        <a id="relatorios" href="" class="download">Relatorios Internos</a>
                     </li>
                     <li>
-                        <a href="{% url 'accounts:user_logout' %}" class="article">Sair</a>
+                        <a href="{% url 'accounts:user_logout' %}" class="article"><i icone="icone"class="fas fa-sign-out-alt"></i>Sair</a>
                     </li>
                 </ul>
             </nav>

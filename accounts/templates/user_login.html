@@ -18,7 +18,7 @@
                     <form class="login-form" method="POST">
                         {% csrf_token %}
 
-                        <h1>Login</h1>
+                       <h4>WINOVER ANALYTICS</h4>
 
                         {% if messages %}
                             <div class="alert alert-info" role="alert">
@@ -29,13 +29,11 @@
                         {% endif %}
 
                         <div class="txtb">
-                            <input id="username" name="username" type="text">
-                            <span  data-placeholder="Usuário"></span>
+                            <input placeholder="Usuario" id="username" name="username" type="text">
                           </div>
                   
                           <div class="txtb">
-                            <input id="password" name="password" type="password">
-                            <span  data-placeholder="Senha"></span>
+                            <input  placeholder="Senha" id="password" name="password" type="password">
                           </div>
                   
                           <input type="submit" class="logbtn" value="Login">
@@ -44,16 +42,6 @@
                   
                         </form>
 
-      <script type="text/javascript">
-        $(".txtb input").on("focus",function(){
-          $(this).addClass("focus");
-        });
-  
-        $(".txtb input").on("blur",function(){
-          if($(this).val() == "")
-          $(this).removeClass("focus");
-        });
-        </script>
 
 
   </body>
