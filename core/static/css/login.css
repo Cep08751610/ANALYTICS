@@ -24,10 +24,14 @@ body{
   margin-top: -25px;
 }
 
+#img-201-201 {
+width: 250px
+}
+
 
 .login-form{
   width: 360px;
-  background: #f1f1f1;
+  background: #e7e9e9;
   height: 480px;
   padding: 80px 40px;
   border-radius: 10px;
@@ -35,11 +39,8 @@ body{
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  filter:alpha(opacity=70);
-  opacity: 0.2;
-  -moz-opacity:0.2;
-  -webkit-opacity:0.7;
-  box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
+  box-shadow: 9px 7px 5px  rgba(40, 40, 40, 0.77);
+
 }
 
 .login-form h1{
@@ -79,14 +80,7 @@ INPUT{
   transition: .5s;
 }
 
-.txtb span::after{
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background: linear-gradient(120deg,#3498db,#8e44ad);
-  transition: .5s;
-}
+
 
 .focus + span::before{
   top: -5px;
