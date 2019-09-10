@@ -1,26 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Monda|Signika&display=swap');
-h4{
-  font-family: 'Signika', sans-serif;
-  font-size: 20pt;
-}
-
 *{
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: 'Anton';
+  font-family: montserrat;
   box-sizing: border-box;
 }
 
 body{
   min-height: 100vh;
-  background-color:#bfc8da;
-  color: #273b63;
+  background: rgb(248, 247, 247);
 }
+
+#logo{
+  background: -webkit-linear-gradient(left, #8e44ad,#3498db);
+  background: linear-gradient(left, #8e44ad,#3498db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#img-200-200 {
+  width: 60px;
+  margin-left: 108px;
+  margin-top: -25px;
+}
+
+#img-201-201 {
+width: 250px
+}
+
 
 .login-form{
   width: 360px;
-  background: #ffffff;
+  background: #e7e9e9;
   height: 480px;
   padding: 80px 40px;
   border-radius: 10px;
@@ -28,6 +39,8 @@ body{
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+  box-shadow: 9px 7px 5px  rgba(40, 40, 40, 0.77);
+
 }
 
 .login-form h1{
@@ -51,35 +64,39 @@ body{
   padding: 0 5px;
   height: 40px;
 }
+INPUT{
+  background: #f1f1f1
+}
 
 .txtb span::before{
   content: attr(data-placeholder);
   position: absolute;
   top: 50%;
   left: 5px;
+  color: #adadad;
+  background: none;
   transform: translateY(-50%);
   z-index: -1;
   transition: .5s;
 }
 
-.txtb span::after{
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background: linear-gradient(120deg,#dcdcdc,gray);
-  transition: .5s;
+
+
+.focus + span::before{
+  top: -5px;
 }
-
-
+.focus + span::after{
+  width: 100%;
+}
 
 .logbtn{
   display: block;
   width: 100%;
   height: 50px;
   border: none;
-  background: linear-gradient(120deg,gray,#dcdcdc);
+  background: linear-gradient(120deg,#3498db,#8e44ad,#3498db);
   background-size: 200%;
+  color: #fff;
   outline: none;
   cursor: pointer;
   transition: .5s;

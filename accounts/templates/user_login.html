@@ -14,12 +14,13 @@
     </head>
 
     <body>
-
+        <div class="sidebar">
+          <img src="{% static 'img/winover-logo-BR-HG.png' %}" id="img-201-201">
+        </div>
                     <form class="login-form" method="POST">
                         {% csrf_token %}
-
-                       <h4>WINOVER ANALYTICS</h4>
-
+                        <img src="{% static 'img/wino_capa_png.png' %}" id="img-200-200">
+                      <h1 id="logo">WINOVER</h1>
                         {% if messages %}
                             <div class="alert alert-info" role="alert">
                                 {% for message in messages %}
@@ -29,19 +30,34 @@
                         {% endif %}
 
                         <div class="txtb">
-                            <input placeholder="Usuario" id="username" name="username" type="text">
+                            <input id="username" name="username" type="text">
+                            <span  placeholder="Usuário"></span>
                           </div>
                   
                           <div class="txtb">
-                            <input  placeholder="Senha" id="password" name="password" type="password">
+                            <input id="password" name="password" type="password">
+                            <span  placeholder="Senha"></span>
                           </div>
                   
                           <input type="submit" class="logbtn" value="Login">
+                          
+                        
+                        
                   
                          
                   
                         </form>
 
+      <script type="text/javascript">
+        $(".txtb input").on("focus",function(){
+          $(this).addClass("focus");
+        });
+  
+        $(".txtb input").on("blur",function(){
+          if($(this).val() == "")
+          $(this).removeClass("focus");
+        });
+        </script>
 
 
   </body>
